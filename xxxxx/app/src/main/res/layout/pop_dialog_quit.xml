@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <ImageView
+        android:id="@+id/quit_image_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/quit_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/w_60" />
+
+    <LinearLayout
+        android:id="@+id/ll_quit0"
+        style="@style/quit_layout"
+        android:layout_marginLeft="@dimen/w_50"
+        android:nextFocusLeft="@+id/ll_quit4">
+
+        <ImageView
+            android:id="@+id/iv_quit0"
+            style="@style/quit_image" />
+
+        <TextView
+            android:id="@+id/tv_quit0"
+            style="@style/quit_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_quit1"
+        style="@style/quit_layout"
+        android:layout_toRightOf="@id/ll_quit0">
+
+        <ImageView
+            android:id="@+id/iv_quit1"
+            style="@style/quit_image" />
+
+        <TextView
+            android:id="@+id/tv_quit1"
+            style="@style/quit_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_quit2"
+        style="@style/quit_layout"
+        android:layout_toRightOf="@id/ll_quit1">
+
+        <ImageView
+            android:id="@+id/iv_quit2"
+            style="@style/quit_image" />
+
+        <TextView
+            android:id="@+id/tv_quit2"
+            style="@style/quit_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_quit3"
+        style="@style/quit_layout"
+        android:layout_toRightOf="@id/ll_quit2">
+
+        <ImageView
+            android:id="@+id/iv_quit3"
+            style="@style/quit_image" />
+
+        <TextView
+            android:id="@+id/tv_quit3"
+            style="@style/quit_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_quit4"
+        style="@style/quit_layout"
+        android:layout_toRightOf="@id/ll_quit3"
+        android:nextFocusRight="@id/ll_quit0">
+
+        <ImageView
+            android:id="@+id/iv_quit4"
+            style="@style/quit_image" />
+
+        <TextView
+            android:id="@+id/tv_quit4"
+            style="@style/quit_text" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/popCancel"
+        android:layout_width="@dimen/w_335"
+        android:layout_height="@dimen/h_127"
+        android:layout_marginLeft="@dimen/w_590"
+        android:layout_marginTop="@dimen/h_825"
+        android:background="@drawable/quit_cancle"
+        android:gravity="center"
+        android:nextFocusLeft="@id/popCancel"
+        android:nextFocusUp="@id/ll_quit0"
+        android:textSize="@dimen/h_45"
+        android:typeface="sans" />
+
+    <Button
+        android:id="@+id/popOK"
+        android:layout_width="@dimen/w_335"
+        android:layout_height="@dimen/h_127"
+        android:layout_marginLeft="@dimen/w_986"
+        android:layout_marginTop="@dimen/h_825"
+        android:background="@drawable/quit_ok"
+        android:gravity="center"
+        android:nextFocusRight="@id/popOK"
+        android:nextFocusUp="@id/ll_quit0"
+        android:textSize="@dimen/h_45"
+        android:typeface="sans" />
+
+</RelativeLayout>

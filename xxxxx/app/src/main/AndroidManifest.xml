@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="tv.dfyc.yckt">
+
+    <!-- WindowManger 权限(浮动窗口) -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <application
+        android:name=".XESApplication"
+        android:allowBackup="false"
+        android:debuggable="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="HardcodedDebugMode"
+        tools:replace="android:allowBackup">
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@style/MainActivityTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".info.search.searchPageActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity android:name=".detail.DetailActivity" />
+        <activity android:name=".detail.BuyListActivity" />
+        <activity android:name=".detail.BuyThemeActivity" />
+        <activity android:name=".detail.PlayVideoActivity" />
+        <activity android:name=".info.personal.PersonalPageNewActivity" />
+        <activity android:name=".FeedBackActivity" />
+        <activity android:name=".detail.OrderActivity" />
+        <activity android:name=".ListPageActivity" />
+        <activity android:name=".detail.ProductListActivity" />
+        <activity android:name=".SpecialActivity" />
+        <activity android:name=".ThemeActivity" />
+
+        <service
+            android:name=".authority.HeartBeatService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity android:name=".AQActivity" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5a979adbf43e4832a6000424" />
+
+        <!--测试key-->
+        <!--<meta-data-->
+            <!--android:name="UMENG_APPKEY"-->
+            <!--android:value="5ab474df8f4a9d40d80001a5" />-->
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="jiangsu_yidong_ziyou" />
+    </application>
+
+</manifest>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_aqactivity">
+
+    <LinearLayout
+        android:id="@+id/rg_aq_menu"
+        android:layout_width="@dimen/w_664"
+        android:layout_height="@dimen/h_80"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/h_140"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_about"
+            android:layout_width="@dimen/w_190"
+            android:layout_height="@dimen/h_80"
+            android:layout_marginLeft="@dimen/w_11"
+            android:layout_marginRight="@dimen/w_11"
+            android:background="@drawable/bt_about_normal"
+            android:nextFocusDown="@+id/scroll_productlist_bar" />
+
+        <Button
+            android:id="@+id/bt_unsubscribe"
+            android:layout_width="@dimen/w_190"
+            android:layout_height="@dimen/h_80"
+            android:layout_marginLeft="@dimen/w_11"
+            android:layout_marginRight="@dimen/w_11"
+            android:background="@drawable/bt_unsubscribe_normal"
+            android:nextFocusDown="@+id/scroll_productlist_bar" />
+
+        <Button
+            android:id="@+id/bt_function"
+            android:layout_width="@dimen/w_190"
+            android:layout_height="@dimen/h_80"
+            android:layout_marginLeft="@dimen/w_11"
+            android:layout_marginRight="@dimen/w_11"
+            android:background="@drawable/bt_function_normal"
+            android:nextFocusDown="@+id/scroll_productlist_bar"
+            android:nextFocusRight="@id/bt_function" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_aqcontent_about"
+        android:layout_width="@dimen/w_1701"
+        android:layout_height="@dimen/h_820"
+        android:layout_marginLeft="@dimen/w_81"
+        android:layout_marginTop="@dimen/h_240"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/iv_aqcontent_unsubscribe"
+        android:layout_width="@dimen/w_1701"
+        android:layout_height="@dimen/h_820"
+        android:layout_marginLeft="@dimen/w_81"
+        android:layout_marginTop="@dimen/h_240"
+        android:scaleType="centerCrop"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/iv_aqcontent_function"
+        android:layout_width="@dimen/w_1701"
+        android:layout_height="@dimen/h_820"
+        android:layout_marginLeft="@dimen/w_81"
+        android:layout_marginTop="@dimen/h_240"
+        android:scaleType="centerCrop"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/scroll_productlist_bg"
+        android:layout_width="@dimen/w_10"
+        android:layout_height="@dimen/h_750"
+        android:layout_marginLeft="@dimen/w_1840"
+        android:layout_marginTop="@dimen/h_215"
+        android:background="@drawable/list_page_scroll_bg">
+
+        <Button
+            android:id="@+id/scroll_productlist_bar"
+            android:layout_width="@dimen/w_10"
+            android:layout_height="@dimen/h_200"
+            android:background="@drawable/list_page_scroll_bar" />
+    </LinearLayout>
+</RelativeLayout>
